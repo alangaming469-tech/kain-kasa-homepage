@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kain & Kasa — Sample Showcase</title>
+<style>
+  :root{--accent:#b91c1c;--ink:#0f172a;--muted:#475569;--bg:#fff6f3;--panel:#ffffff}
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial,sans-serif;background:linear-gradient(180deg,#fff0ec,#ffffff 25%);color:var(--ink);line-height:1.6}
+  header{position:sticky;top:0;backdrop-filter:saturate(1.2) blur(10px);background:rgba(255,255,255,.85);border-bottom:1px solid rgba(0,0,0,.06)}
+  .wrap{max-width:1200px;margin:0 auto;padding:22px 28px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:18px}
+  .brand{font-weight:800;letter-spacing:-.02em;font-size:22px}
+  .brand span{color:var(--accent)}
+  nav a{color:#334155;text-decoration:none;padding:8px 10px;border-radius:10px;font-weight:600;font-size:14px}
+  nav a:hover{background:#f1f5f9}
+  .hero{padding:72px 0 40px}
+  .tag{display:inline-block;background:rgba(185,28,28,.08);color:#7f1d1d;border:1px solid rgba(185,28,28,.15);padding:6px 10px;border-radius:999px;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+  h1{font-size:clamp(34px,5vw,60px);line-height:1.05;margin:14px 0 14px;max-width:18ch;letter-spacing:-.03em}
+  .sub{color:var(--muted);max-width:52ch}
+  .actions{margin-top:22px;display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 14px;border-radius:14px;text-decoration:none;font-weight:700;border:1px solid rgba(0,0,0,.08);background:#fff}
+  .btn:hover{transform:translateY(-1px)}
+  .btn.primary{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;padding:20px 0 60px}
+  .card{background:var(--panel);border:1px solid rgba(0,0,0,.06);border-radius:18px;padding:18px;box-shadow:0 10px 30px rgba(0,0,0,.04)}
+  .img{height:180px;border-radius:14px}
+  .chip{margin-top:14px;display:inline-flex;gap:8px;flex-wrap:wrap}
+  .chip span{background:#f8fafc;border:1px solid #e2e8f0;padding:5px 9px;border-radius:999px;font-size:12px;color:#334155}
+  footer{padding:40px 0;color:#64748b;font-size:13px}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">Kain <span>&</span> Kasa</div>
+    <nav>
+      <a href="#koleksi">Koleksi</a>
+      <a href="https://github.com/alangaming469-tech/kain-kasa-homepage">GitHub</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="wrap hero">
+    <div>
+      <div class="tag">Ready for GitHub Pages</div>
+      <h1>Koleksi kain kasual yang nyaman dipakai sehari-hari.</h1>
+      <p class="sub">Halaman depan statis untuk eksperimen tampilan, struktur halaman, dan integrasi GitHub Pages repo publik.</p>
+      <div class="actions">
+        <a class="btn primary" href="#koleksi">Lihat Koleksi</a>
+        <a class="btn" href="https://github.com/alangaming469-tech/kain-kasa-homepage">Repo GitHub</a>
+      </div>
+    </div>
+  </section>
+  <section id="koleksi" class="wrap grid">
+    <article class="card">
+      <div class="img" style="background-image:linear-gradient(135deg,#fde8e8,#f8b4b4)"></div>
+      <div class="chip"><span>Katun</span><span>Lengan panjang</span></div>
+      <h3>Kemeja Katun Coklat</h3>
+      <p style="color:#64748b;margin:6px 0 0">Rp 129.000</p>
+    </article>
+    <article class="card">
+      <div class="img" style="background-image:linear-gradient(135deg,#eef2ff,#c7d2fe)"></div>
+      <div class="chip"><span>Linen</span><span>Regular fit</span></div>
+      <h3>Kemeja Linen Biru</h3>
+      <p style="color:#64748b;margin:6px 0 0">Rp 149.000</p>
+    </article>
+    <article class="card">
+      <div class="img" style="background-image:linear-gradient(135deg,#fff7ed,#fed7aa)"></div>
+      <div class="chip"><span>Rajut</span><span>Weekend</span></div>
+      <h3>Sweater Rajut Krem</h3>
+      <p style="color:#64748b;margin:6px 0 0">Rp 179.000</p>
+    </article>
+  </section>
+</main>
+<footer class="wrap">
+  <p>© 2026 Kain & Kasa — Dibuat untuk GitHub Pages & repo publik.</p>
+</footer>
+</body>
+</html>
